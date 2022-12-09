@@ -1,0 +1,22 @@
+Les réponses aux questions de Thomas CHAMPSEIX :
+
+16) Qu'est ce que Docker ? A quoi cela sert-il ? 
+
+Docker est un manageur de conteneur. 
+Livré avec un utilitaire en ligne de commande permettant de gérer les images, les conteneur, les volumes, les networks et surement bien d'autres. 
+Docker permet de lancer des projets dans des environnements discrets (pas forcément très fermé en terme de sécurité mais tout de même en terme d'organisation).
+Les équipes de Docker on également mis en place une registery public d'image nomé docker-hub sur lequel on peut trouver un grand nombre d'image de grandes marques mais également de communautés.
+
+17) Qu'est ce que la CI et la CD ? Pourquoi est-ce utile ?
+
+La CI est le fait de vérifier de manière automatique et à chaque étape de dévellopement le bon fonctionnement du projet.
+La CD est le principe de déployer automatiquement ou semi-automatiquement un projet.
+Ces 2 principes sont très utile pour vérifier la non régréssion des versions d'un projet et simplifie le déploiement en permettant celui ci par un simple appuie 
+
+18) Qu'avez vous pensez du cours ?
+
+J'ai beaucoup aimé le cours il est vraiment bien structuré et il m'a beaucoup intéressé, merci !
+
+19)
+
+Surprise !

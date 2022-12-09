@@ -1,0 +1,67 @@
+volumes:
+  mysql:
+
+networks:
+  back:
+
+services:
+  mysql:
+    image: mysql:8
+    networks:
+      back:
+        aliases:
+        - mysql
+    volumes:
+      - mysql:/var/lib/mysql
+    environment:
+      - MYSQL_RANDOM_ROOT_PASSWORD=true
+      - MYSQL_DATABASE=theDatabase
+      - MYSQL_USER=theUser
+      - MYSQL_PASSWORD=theUserPassword
+    # env_file:
+    #   - .env
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 5s
+      timeout: 5s
+      retries: 2
+
+  back:
+    image: backexam:1.0
+    build: ./java
+    networks:
+      back:
+        aliases:
+        - back
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/theDatabase
+      - SPRING_DATASOURCE_USERNAME=theUser
+      - SPRING_DATASOURCE_PASSWORD=theUserPassword
+    # env_file:
+    #   - .env
+    ports:
+      - 8448:8448
+    depends_on:
+      mysql:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "localhost:8448/test"]
+      interval: 30s
+      timeout: 5s
+      retries: 2
+    
+
+  front:
+    image: frontexam:1.0
+    build: ./angular
+    environment:
+      - BACKEND_URL_ENV_VAR=http://localhost:8448
+    ports:
+      - 80:80
+    depends_on:
+      back:
+        condition: service_healthy
+
+
+
+    

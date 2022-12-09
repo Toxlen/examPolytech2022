@@ -1,0 +1,78 @@
+ 1998  git clone https://github.com/vbenji/examPolytech2022.git
+ 1999  code examPolytech2022/
+ 2000  docker build java/
+ 2001  docker run 0e72ec564df5
+ 2002  docker build -t javaBackExam java/
+ 2003  docker build -t javaBackExam:1.0 java/
+ 2004  docker build -t backexam:1.0 java/
+ 2005* docker r
+ 2006  docker compose run
+ 2007  docker compose up
+ 2008  docker compose down
+ 2009  docker compose up
+ 2010  docker compose down
+ 2011  docker compose up
+ 2012  docker compose down
+ 2013  docker compose up
+ 2014  docker compose down
+ 2015  docker compose up
+ 2016  docker compose down
+ 2017  docker compose up
+ 2018  docker compose down
+ 2019  docker compose up
+ 2020  docker compose down
+ 2021  docker compose up
+ 2022  docker compose down
+ 2023  docker compose up
+ 2024  docker compose down
+ 2025  docker compose up
+ 2026  docker compose down
+ 2027  docker compose up
+ 2028  docker compose down --volume
+ 2029  docker compose down --volumes
+ 2030  docker compose up
+ 2031  docker compose down --volumes
+ 2032  docker compose up
+ 2033  docker compose down
+ 2034  docker compose up
+ 2035  docker compose down
+ 2036  docker compose up
+ 2037  docker build -t backexam:1.0 java/
+ 2038  docker compose build front
+ 2039  docker compose up
+ 2040  docker compose down
+ 2041  docker compose up
+ 2042  docker compose down
+ 2043  docker compose up
+ 2044  docker compose down
+ 2045  docker compose up
+ 2046  docker compose build front
+ 2047  docker compose down
+ 2048  docker compose up
+ 2049  docker compose up -d
+ 2050  docker exec exampolytech2022-front-1 bash
+ 2051  ls
+ 2052  docker exec -it exampolytech2022-front-1 bash
+ 2053  docker compose down
+ 2054  docker compose up -d
+ 2055  docker compose build front
+ 2056  docker compose down
+ 2057  docker compose up -d
+ 2058  docker compose down
+ 2059  docker compose up -d
+ 2060  docker log exampolytech2022_back
+ 2061  docker logs exampolytech2022_back
+ 2062  docker logs exampolytech2022-back-1~
+ 2063  docker logs exampolytech2022-back-1
+ 2064  docker compose down
+ 2065  docker compose up -d
+ 2066  docker login --username AWS --password "eyJwYXlsb2FkIjoiR1hWSFh6QmIrTXFHR25jMURzaUtlbmpMa3E4Mm94NDlUdll5MW45VnYzd3kweUs2V2wrZC8vOFdaSmRTM0R0anhvcHB3bGpkRzhGcVdnTmd5U2tuMXJRR2hsNGtaT0RNQWtsSHJSRWVudnMyUDRWVGw0N0FTSGlRMVR3VVhVTW40Z2lZNXpBV1NBekx5Yys0YVZQVy85RnphZHV1RnQrMlVoYTZTRFVmVG5VbGxFQk5RT2ZycmFVV0gzQVQ0MVdTbUdmQUorRDl2Qi9uZThaR2YzZFh3NWYyeXhzN0xmY2V4OElvMXArRTY2Rm1heWlaTEVjbTFNM3U4VTNxQVJSRG1FRXQ3b0xqVDJ1SjY2S0NFNUpKMUlFeWJWMlREWmVzZ2VoS084cTNRUVl6aVMxeTVDbWhLS0VsZTdjWC9MMkdoMDhmcmZ2WUhjVWtyeTdKUjZiQXlIUkRVRjQ1dHhWMTE0R0JMdFQrQ3JsbzVNNDd2cDNGbVdDVjBja29lTThtQTJCWHU0SHl3WDdRWEp3aGR0RGJCdzY4UEVCdmtvaFl5QVVJTW5yYVBULys2VWRFblZ6bWpmbzNieWlWcWFRQUxaWWoxc3UvUW1mZXFSdzFZaVgrb3lNL0FaT1dMN1dQVG0wTTNxYTZ4MjJaZ3FSVld4dmFubWkrRURKbksxZ0ZCbWJ5Q242QmdQUllrOUNnNTVlTTRVek5xKytZL2FXeWU3UGdyWEhjeVoxMG5pUTNpUkJGRG9ZZ25LVXF0MmJpQWdreUtidEdLVy9TWnpxRXIyTFp5MUpqRm5ZK2VHMDN1Y3JCb1BEeTBxZTJ0UWgzQUh2Nm1VVE16eUVxeGFKbXBrZmpJWnBydnZjdy95Qm0xZ2RlRGZIT1g5REY1R2ZLZVZXY3M4L3dwV0lFcTYvTlNxb2dsb0hQVlpwdFpIbkUybzNTcWdCVEVSbnk2VDBNN1lBb2JKOVpUVFZ2NkhiSkxZbHdtRExtQkdhRGJmb3o5QWE3VWxLdUFraGRWWFh3WWJXcHo0YVFPazM5RkRXeEVCaVdtaDlHUG03RzRmWWRtN3BTMW8zRk9CUWR1NEhuZ1hHRGVSSmY5YnpHVldlSktYSThZZC9IZUs2Vmw4N05Zd05MWEN1V3VIaVM0STFzOEx3YUpHK1FMQy9aNHpONExJL2N1ZTU1WnJYV2kxSlR1NTBJSkZLbkZpbGNZZnNxYVNYejRCbUExUmNUZG5OU0wwTCtFTWluMS9MN1JhQmZ1bk5MU1Y1NDQxd3I1MXhNQkRtaSt3WFRVQm9vaUFPQW8vTkZUNXhvZ3BQNlNpVmd0UT09IiwiZGF0YWtleSI6IkFRSUJBSGpXWHc2WlNzZUNkQWwrTm9kRll3Zi9oUm1zTEEybmdhNUJCZnZia1BuT2J3RXQzL3dzQVFuNHgvelN1bUxNUE5pTUFBQUFmakI4QmdrcWhraUc5dzBCQndhZ2J6QnRBZ0VBTUdnR0NTcUdTSWIzRFFFSEFUQWVCZ2xnaGtnQlpRTUVBUzR3RVFRTXV3KzNHODN5OHplQXlsSDZBZ0VRZ0R0dGFqem5MVFhBVC9JcEk3YUxQREdnYjA2M3J3TTc4dWtRL1pyUXVkWXIvOWs1aDNmRWY1ZGlaTEpUODVac1BmWVNOaXowRHNjalBVeWhadz09IiwidmVyc2lvbiI6IjIiLCJ0eXBlIjoiREFUQV9LRVkiLCJleHBpcmF0aW9uIjoxNjcwNjQ0NzE4fQ==" public.ecr.aws/u1k0q0r7
+ 2067  docker image ls
+ 2068  docker tag 34cf275324b1 public.ecr.aws/u1k0q0r7/angular:thomas
+ 2069  docker image ls
+ 2070  docker push  public.ecr.aws/u1k0q0r7/java:thomas 
+ 2071  docker push  public.ecr.aws/u1k0q0r7/angular:thomas 
+ 2072  docker compose down
+ 2073  docker compose build front
+ 2074  docker compose build back 
+ 2075  history > history.txt

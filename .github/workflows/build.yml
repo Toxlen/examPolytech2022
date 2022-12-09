@@ -1,0 +1,24 @@
+
+name: Build docker image
+
+on:
+  push:
+    branches: [ "master" ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Build back image
+      uses: docker/build-push-action@v3.2.0
+      with:
+        context: ./java
+
+    - name: Build front image
+      uses: docker/build-push-action@v3.2.0
+      with:
+        context: ./angular
